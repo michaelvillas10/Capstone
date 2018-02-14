@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
     {
          DB::table('citizenship')->insert([
             'name' => 'John Michael Villas',
-            'clients_id' => '0001',
+            'clients_id' => 'Filipino','American','Japanese','Brazillian','African','Native American','Afghans','Albanians',
+             'Algerian','Colombian','Dutch','Malaysian','Zimbabwean','British','Dominican',
             'created_at' => '12-12-12',
             'updated_at' => '12-12-12',
             
@@ -32,7 +33,8 @@ class DatabaseSeeder extends Seeder
     {
          DB::table('lawsuit')->insert([
             'name' => 'John Edward Olino',
-            'casetobehandleds_id' => '0001',
+            'casetobehandleds_id' => 'Bribery','Child Abuse','Child Pornography','Cyber Bullying','Forgery','Fraud','Harassment','Homicide',
+             'Kidnapping','Prostitution','Sexual Assault',
              'created_at' => '12-12-12',
              'updated_at' => '12-12-12',
         }
@@ -58,7 +60,7 @@ class DatabaseSeeder extends Seeder
     {
          DB::table('education')->insert([
             'name' => 'Patrick Rodriguez',
-            'clients_id' => '0002',
+            'clients_id' => 'Elementary','College','Masteral'.'Doctoral',
              'created_at' => '12-12-12',
              'updated_at' => '12-12-12',
         }
@@ -91,7 +93,7 @@ class DatabaseSeeder extends Seeder
     {
          DB::table('languages')->insert([
             'name' => 'Jocelyn Flores',
-            'clients_id' => '0004',
+            'clients_id' => 'English','Tagalog','Chinese','Russian',
              'created_at' => '2-22-14',
              'updated_at' => '2-24-14',
         }
@@ -116,19 +118,19 @@ class DatabaseSeeder extends Seeder
 
         public function run()
     {
-         DB::table('lawsuit')->insert([
-            'name' => '',
-            'casetobehandleds_id' => '0001',
-             'created_at' => '12-12-12',
-             'updated_at' => '12-12-12',
-        }
-
-        public function run()
-    {
          DB::table('statuses')->insert([
             'name' => 'Popo Enriquez',
              'created_at' => '7-7-17',
              'updated_at' => '7-12-17',
+                     public function run()
+    {
+         DB::table('religion')->insert([
+            'name' => 'Ryan Lumido',
+            'casetobehandleds_id' => 'Roman Catholic','Christian','Iglesia Ni Cristo','Protestant','Seventh-Day-Adventist','Evangelicals',
+             'created_at' => '12-12-12',
+             'updated_at' => '12-12-12',
+        }
+
 
     }
         
