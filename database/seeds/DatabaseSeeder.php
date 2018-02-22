@@ -350,10 +350,15 @@ class DatabaseSeeder extends Seeder
         public function run()
     {
          DB::table('positions')->insert([
-            'name' => 'Mike Jordan',
-            'employees_id' => '0005',
-             'created_at' => '3-3-15',
-             'updated_at' => '3-3-15',
+            'name' => 'Lawyer',
+             
+             ])
+             
+          DB::table('positions')->insert([
+            'name' => 'Interviewer',
+             
+             ])   
+            
         }
 
         public function run()
