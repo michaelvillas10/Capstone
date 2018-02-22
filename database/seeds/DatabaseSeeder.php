@@ -182,27 +182,27 @@ class DatabaseSeeder extends Seeder
              public function run()
     {
             DB::table('casetypes')->insert([
-            'name' => 'Civil',
+            'name' => 'Criminal',
              
              ])
              
              DB::table('casetypes')->insert([
-            'name' => 'Criminal',
+            'name' => 'Civil',
              
              ])  
              
              DB::table('casetypes')->insert([
-            'name' => 'Juvenile',
+            'name' => 'Labor',
              
              ])
                  
              DB::table('casetypes')->insert([
-            'name' => 'Domestic',
+            'name' => 'Administrative',
              
              ])
                   
              DB::table('casetypes')->insert([
-            'name' => 'Miscellaneous Civil',
+            'name' => 'Appeal',
              
              ])
         }   
@@ -215,22 +215,22 @@ class DatabaseSeeder extends Seeder
            ])
              
          DB::table('categories')->insert([
-            'name' => 'Habeas Corpus',
+            'name' => 'CICL',
              
            ])
              
          DB::table('categories')->insert([
-            'name' => 'Appeals against orders of Statutory Bodies',
+            'name' => 'Human Security Act',
              
            ])
              
          DB::table('categories')->insert([
-            'name' => 'Admiralty and Maritime Law',
+            'name' => 'Anti-Torture Law',
              
            ])  
              
          DB::table('categories')->insert([
-            'name' => 'Statutory',
+            'name' => 'Agrarian Case',
              
            ])    
         }
@@ -285,11 +285,34 @@ class DatabaseSeeder extends Seeder
         public function run()
     {
          DB::table('involvements')->insert([
-            'name' => 'Jeffrey Tam',
-            'casetobehandleds_id' => 'criminal',
-             'created_at' => '1-1-13',
-             'updated_at' => '1-13-13',
-        }
+            'name' => 'Plaintiff',
+             
+             ])
+             
+          DB::table('involvements')->insert([
+            'name' => 'Petitioner',
+             
+             ]) 
+              
+           DB::table('involvements')->insert([
+            'name' => 'Defendant',
+             
+             ])
+               
+            DB::table('involvements')->insert([
+            'name' => 'Respondent',
+             
+             ])  
+                
+            DB::table('involvements')->insert([
+            'name' => 'Oppositor',
+             
+             ])  
+                
+             DB::table('involvements')->insert([
+            'name' => 'Accused',
+             
+             ])     
 
         public function run()
     {
@@ -335,19 +358,69 @@ class DatabaseSeeder extends Seeder
 
         public function run()
     {
-         DB::table('requestts')->insert([
-            'name' => 'Kobe Baragan',
-            'casetobehandleds_id' => '0005',
-             'created_at' => '5-3-16',
-             'updated_at' => '5-7-16',
+            DB::table('requestts')->insert([
+            'name' => 'Legal Advice',
+             
+            ])
+             
+            DB::table('requestts')->insert([
+            'name' => 'Legal Assistance',
+             
+            ])
+               
+            DB::table('requestts')->insert([
+            'name' => 'Legal Documentation',
+             
+            ])
+                
+            DB::table('requestts')->insert([
+            'name' => 'Mediation',
+             
+            ]) 
+                
+            DB::table('requestts')->insert([
+            'name' => 'Administration of oath',
+             
+            ])
+                
+            DB::table('requestts')->insert([
+            'name' => 'Representation of quasi-judicial bodies',
+             
+            ])     
         }
 
         public function run()
     {
          DB::table('statuses')->insert([
-            'name' => 'Shanti Enriquez',
-             'created_at' => '7-7-17',
-             'updated_at' => '7-12-17',
+            'name' => 'Granted',
+             
+             ])
+             
+             DB::table('statuses')->insert([
+            'name' => 'Dismissed',
+             
+             ])
+                 
+             DB::table('statuses')->insert([
+            'name' => 'Denied',
+             
+             ])
+                 
+             DB::table('statuses')->insert([
+            'name' => 'Terminated',
+             
+             ]) 
+                 
+             DB::table('statuses')->insert([
+            'name' => 'Closed',
+             
+             ])
+                 
+             DB::table('statuses')->insert([
+            'name' => 'Disposed',
+             
+             ])      
+             
              
              
          public function run()
